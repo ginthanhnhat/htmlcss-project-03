@@ -19,6 +19,14 @@ body {
 }
 
 /* ================== Common ================== */
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 a {
     text-decoration: none;
 }
@@ -63,6 +71,36 @@ a {
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 30px; /* 166.667% */
+}
+
+.control {
+    display: flex;
+    column-gap: 18px;
+}
+
+.control__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    outline: none;
+    color: #575f66;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.control__btn:hover {
+    color: #fff;
+    border-color: #2e80ce;
+    background: #2e80ce;
+    cursor: pointer;
+}
+
+.control-next-icon {
+    rotate: 180deg;
 }
 
 /* ================== Header ================== */
@@ -393,4 +431,119 @@ a {
 .work-item__more {
     display: inline-block;
     margin-top: 18px;
+}
+
+/* ================== Feature ================== */
+.feature {
+    margin-top: 170px;
+}
+
+.feature__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature__images {
+    width: 50%;
+    height: 491px;
+    position: relative;
+}
+
+.feature__img {
+    position: absolute;
+    height: 370px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+
+.feature__img:first-child {
+    width: 512px;
+    top: 0;
+    left: 0;
+}
+
+.feature__img:last-child {
+    width: 332px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.feature__content {
+    width: 40%;
+}
+
+.feature__heading {
+}
+
+.feature__desc {
+    margin-top: 18px;
+    padding-bottom: 38px;
+}
+
+/* =================== Members =================== */
+.members {
+    margin-top: 170px;
+    text-align: center;
+}
+.members__heading {
+    padding: 38px;
+}
+.members__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 34px;
+}
+.members-item {
+    transition: 0.25s;
+}
+
+.member-item:hover .member-item__img {
+    transform: scale(1.1);
+}
+
+.members-item__img {
+    width: 262px;
+    height: 290px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.members-item__name {
+    margin-top: 12px;
+    color: var(--heading-text-color);
+    text-align: center;
+
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+}
+.members-item__school {
+    color: var(--desc-text-color);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 26px; /* 185.714% */
+}
+
+.member__control {
+    margin-top: 38px;
+
+    justify-content: center;
+}
+
+/* =================== Install =================== */
+
+/* =================== News =================== */
+
+/* =================== Appointment  =================== */
+
+/* =================== Footer =================== */
+footer {
+    height: 500px;
+    background-color: #ccc;
 }
