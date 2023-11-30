@@ -499,10 +499,16 @@ a {
     column-gap: 34px;
 }
 .members-item {
-    transition: 0.25s;
 }
 
-.member-item:hover .member-item__img {
+.members-item__thumb {
+    background: #eaf6ff;
+    padding: 28px 4px 0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.members-item:hover .members-item__img {
     transform: scale(1.1);
 }
 
@@ -512,6 +518,7 @@ a {
     flex-shrink: 0;
     object-fit: cover;
     border-radius: 6px;
+    transition: 0.25s;
 }
 
 .members-item__name {
@@ -537,6 +544,56 @@ a {
 }
 
 /* =================== Install =================== */
+.install {
+    margin-top: 170px;
+}
+.install__inner {
+    height: 427px;
+    margin-top: 95px;
+    padding: 0 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    background: #2e80ce;
+    position: relative;
+}
+
+.install__img {
+    width: 284px;
+    height: 522px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.install__content {
+    width: 586px;
+    margin-top: 76px;
+}
+
+.install__heading {
+    width: 489px;
+    color: #fff;
+}
+
+.install__desc {
+    margin-top: 18px;
+    color: #fff;
+}
+
+.install__row {
+    display: flex;
+    margin-top: 38px;
+    gap: 28px;
+}
+
+.install__btn-img {
+    width: 135px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
 
 /* =================== News =================== */
 
