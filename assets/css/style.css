@@ -596,6 +596,107 @@ a {
 }
 
 /* =================== News =================== */
+.news {
+    margin-top: 170px;
+}
+
+.news__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news__content {
+    width: 40%;
+}
+
+.news__heading {
+}
+
+.news__more {
+    display: block;
+    margin-top: 28px;
+    color: #10375c;
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+    text-decoration-line: underline;
+}
+
+.news__control {
+    margin-top: 28px;
+}
+
+.news__list {
+    width: 49%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+
+.news-item {
+    padding-bottom: 21px;
+    border-radius: 12px;
+    border: 1px solid #e8ebee;
+    background: #fff;
+}
+
+.news-item:hover {
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+    border: none;
+}
+
+.news-item:hover .news-item__img {
+    transform: scale(1.1);
+}
+
+.news-item:hover .news-item__more {
+    color: var(--primary-color);
+}
+
+.news-item__thumb {
+    overflow: hidden;
+}
+
+.news-item__img {
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    width: 270px;
+    height: 172px;
+    flex-shrink: 0;
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.news-item__body {
+    margin: 18px 22px 0;
+}
+
+.news-item__heading {
+    color: #10375c;
+    font-family: Sora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 162.5% */
+}
+
+.news-item__desc {
+    margin-top: 10px;
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 24px; /* 171.429% */
+}
+
+.news-item__more {
+    margin-top: 12px;
+    display: block;
+    color: #10375c;
+    font-size: 1.4rem;
+}
 
 /* =================== Appointment  =================== */
 
