@@ -699,6 +699,38 @@ a {
 }
 
 /* =================== Appointment  =================== */
+.appointment {
+    margin-top: 170px;
+    background: #f6fbff;
+    text-align: center;
+}
+
+.appointment__inner {
+    padding: 100px 0;
+}
+
+.appointment__heading {
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.appointment__heading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16%;
+    height: 2px;
+    background: #2e80ce;
+    border-radius: 999px;
+}
+
+.appointment__desc {
+    width: 617px;
+    margin: 18px auto 38px;
+}
 
 /* =================== Footer =================== */
 footer {
