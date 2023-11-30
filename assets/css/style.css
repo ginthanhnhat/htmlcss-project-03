@@ -734,6 +734,123 @@ a {
 
 /* =================== Footer =================== */
 footer {
-    height: 500px;
-    background-color: #ccc;
+    margin-top: 170px;
+    padding: 100px;
+    background: var(--bg-color);
+    font-family: "Open Sans";
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: repeat(4, 29% 11.5% 11.5% 28%);
+    column-gap: 78px;
+}
+
+.footer__desc {
+    margin-top: 22px;
+    color: #a9b3bb;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+.footer__list {
+    margin-top: 20px;
+}
+
+.footer__item:not(:first-of-type) {
+    margin-top: 10px;
+}
+
+.footer__item:hover a {
+    text-decoration: underline;
+}
+
+.footer__heading {
+    color: #fff;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
+}
+
+.footer__link {
+    color: #a9b3bb;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px; /* 185.714% */
+}
+
+.footer__heading:last-of-type {
+    margin-top: 28px;
+}
+
+.footer__social {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.footer__social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--primary-color);
+    transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.footer-form {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.footer-form__input {
+    width: 212px;
+    height: 46px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid #406181;
+    border-radius: 4px;
+    color: #fff;
+    background: transparent;
+}
+
+.footer-form__submit {
+    --height: 46px;
+    min-width: 108px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+}
+
+.footer__copyright {
+    margin-top: 28px;
+    padding-top: 28px;
+    text-align: center;
+    position: relative;
+}
+
+.footer__copyright::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #406181;
+    position: absolute;
+    top: 0;
+}
+
+.footer__copyright-text {
+    color: #aab3ba;
+    font-size: 1.4rem;
+    line-height: 26px; /* 185.714% */
 }
